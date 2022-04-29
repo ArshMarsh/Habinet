@@ -1,0 +1,114 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: May 04, 2021 at 01:27 PM
+-- Server version: 5.7.24
+-- PHP Version: 7.4.1
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `group`
+--
+CREATE DATABASE IF NOT EXISTS `group` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `group`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `groups`
+--
+
+CREATE TABLE `groups` (
+  `id` int(11) NOT NULL,
+  `name` varchar(500) NOT NULL,
+  `admin_id` int(11) NOT NULL,
+  `date_joined` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `image` blob
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `groups`
+--
+
+INSERT INTO `groups` (`id`, `name`, `admin_id`, `date_joined`, `image`) VALUES
+(0, 'starting_gp', 0, '2021-04-21 04:43:54', NULL);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `groups`
+--
+ALTER TABLE `groups`
+  ADD PRIMARY KEY (`id`);
+--
+-- Database: `tasks`
+--
+CREATE DATABASE IF NOT EXISTS `tasks` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `tasks`;
+--
+-- Database: `test`
+--
+CREATE DATABASE IF NOT EXISTS `test` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `test`;
+--
+-- Database: `users`
+--
+CREATE DATABASE IF NOT EXISTS `users` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `users`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `username`
+--
+
+CREATE TABLE `username` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `user` varchar(1000) DEFAULT NULL,
+  `pass` varchar(1000) DEFAULT NULL,
+  `mail` varchar(1000) DEFAULT NULL,
+  `level` int(6) DEFAULT NULL,
+  `xp` int(6) DEFAULT NULL,
+  `mode` varchar(1000) DEFAULT NULL,
+  `streak` int(6) DEFAULT NULL,
+  `streakcount` int(6) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `username`
+--
+ALTER TABLE `username`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `username`
+--
+ALTER TABLE `username`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

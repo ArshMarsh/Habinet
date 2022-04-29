@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "Project Habinet"
+        },
+        {
+            "type": "java",
+            "name": "Launch Launcher",
+            "request": "launch",
+            "mainClass": "Launcher",
+            "projectName": "Project Habinet"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "Project Habinet_ea460b57"
+        },
+        {
+            "type": "java",
+            "name": "Launch Launcher",
+            "request": "launch",
+            "mainClass": "Launcher",
+            "projectName": "Project Habinet_ea460b57"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch DBSetup",
+            "request": "launch",
+            "mainClass": "DBSetup",
+            "projectName": "UI Ather's Part_f2a27ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch Launcher",
+            "request": "launch",
+            "mainClass": "Launcher",
+            "projectName": "UI Ather's Part_f2a27ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch MenuFrame",
+            "request": "launch",
+            "mainClass": "Menu.MenuFrame",
+            "projectName": "UI Ather's Part_f2a27ee"
+        },
+        {
+            "type": "java",
+            "name": "Launch test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "UI Ather's Part_f2a27ee"
+        }
+    ]
+}
